@@ -12,9 +12,9 @@ h1 {
   font-size: 60px;
   padding-left: 0px;
   margin: auto;
-  font-family: 'Open Sans', sans-serif;
-  -webkit-text-stroke-width: 2.5px;
-  -webkit-text-stroke-color: black;
+  font-family: 'Open Sans', sans-serif; /* this is the main font that i chose for web app */
+  -webkit-text-stroke-width: 2.5px; /* this is the outline stroke for the title text */
+  -webkit-text-stroke-color: black; /* this is the colour of the outline stroke */
 }
 
 p {
@@ -22,20 +22,45 @@ p {
   color: #157F1F;
   font-size: 25px;
   padding-left: 0px;
-  margin: auto;
+  margin-bottom: auto;
   font-family: 'Open Sans', sans-serif;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
 img {
-  margin-left: 425px;
-  padding: inherit;
+  margin-left: 250px;
+  /* padding: inherit; */
 }
 
 .boxed {
-  position: absolute;
   border: 4px solid black ;
-  width: 1130px;
+  background-color: #4D4D4D;
+  opacity: 0.9;
+  margin-left: 170px;
+  margin-top: 50px;
+  width: 800px;
   height: 700px;
+}
+
+.button1 {
+  background-color: #157F1F;
+  color: black;
+  outline-color: black;
+  padding: 20px 40px;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-right: 1px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #157F1F; /* Primary Purple - Stand Alone Colour*/
+  background-color: #069E2D; /* Secondary Purple - Colour when User Hovers*/
+  color: black;
+  outline-color: black;
 }
