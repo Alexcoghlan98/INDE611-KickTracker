@@ -17,6 +17,20 @@ h1 {
   -webkit-text-stroke-color: black; /* this is the colour of the outline stroke */
 }
 
+h3 {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+}
+
+h4 {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+}
+
 p {
   text-align: center;
   color: #157F1F;
@@ -28,7 +42,7 @@ p {
   -webkit-text-stroke-color: black;
 }
 
-img {
+image {
   margin-left: 250px;
   /* padding: inherit; */
 }
@@ -41,6 +55,15 @@ img {
   margin-top: 50px;
   width: 800px;
   height: 700px;
+}
+
+.boxed1 {
+  border: 4px solid black;
+  background-color: #090909;
+  width: 400px;
+  height: 350px;
+  margin-left: 190px;
+  margin-top: 20px;
 }
 
 .button1 {
