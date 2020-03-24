@@ -87,3 +87,9 @@ image {
   color: black;
   outline-color: black;
 }
+
+#exampleFormControlInput1 {
+  border-radius: 5px;
+  border-color: black;
+  background-color: #157F1F;
+}
