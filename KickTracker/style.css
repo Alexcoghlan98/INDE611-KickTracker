@@ -44,7 +44,7 @@ p {
 
 image {
   margin-left: 250px;
-  /* padding: inherit; */
+  padding: inherit;
 }
 
 .boxed {
@@ -82,8 +82,8 @@ image {
 }
 
 .button:hover {
-  background-color: #157F1F; /* Primary Purple - Stand Alone Colour*/
-  background-color: #069E2D; /* Secondary Purple - Colour when User Hovers*/
+  background-color: #157F1F; /* Primary Green - Stand Alone Colour*/
+  background-color: #069E2D; /* Secondary Green - Colour when User Hovers*/
   color: black;
   outline-color: black;
 }
