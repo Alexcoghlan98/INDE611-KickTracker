@@ -116,6 +116,11 @@ image {
   outline-color: black;
 }
 
+i {
+  position: relative;
+  vertical-align: middle;
+}
+
 #exampleFormControlInput1 {
   border-radius: 5px;
   border-color: black;
