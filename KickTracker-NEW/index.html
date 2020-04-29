@@ -28,21 +28,30 @@
           <p>KickTracker</p> <!-- This is the title of the product -->
           <h1>Data Analysis Made For You</h1> <!-- This is the tag line of the product -->
 
-          <div class="container"> <!-- This is the container that holds the content below -->
+          <div id="login_div" class="container"> <!-- This is the container that holds the content below -->
             <div class="row">
               <div class="col">
                 </div>
               <div class="col-12"> <!--This determines the columns that all of the content goes into, it positions the content in certain parts of the page so that it all looks professional and arranged -->
                 <div class="form-group mx-sm-3 mb-2"> <!-- This helps with the positioning and organisation of the page in general -->
-          <label for="exampleFormControlInput1"></label> <!-- This is the form where the user can input their tracker code which links to their personal tracker -->
-          <input type="email" class="form-control, input-sm" id="exampleFormControlInput1" placeholder="Insert Tracker Code Here"> <!-- This lets the user know what to input in the form so that they can move onto the contents page -->
+                  <input type="email" placeholder="Email..." id="email_field" />
+                  <input type="password" placeholder="Tracker Code..." id="password_field" />
 
-          <div class="text-center">
+              <button onclick="login()"> Lets See Your Results</button>
+
+              <div id="user_div" class="loggedin-div">
+                <h3>Welcome User</h3>
+                <p> Welcome to the login screen </p>
+                <button>Logout</button>
+              </div>
+
+
+          <!-- <div class="text-center">
             <div class="btn-group" role="group">
-              <a class="button button1" href="loader.html"><i class="far fa-chart-bar fa-lg"></i>  Lets See Your Results</a> <!-- This is the button on the landing page that sends the user to the contents page. Also has the icon to add some asthetics to the page -->
-              <div class="text-center">
+              <a class="button button1" href="loader.html"><i class="far fa-chart-bar fa-lg"></i>  Lets See Your Results</a> -->
+              <!-- <div class="text-center">
                 <div class="btn-group" role="group">
-                  <a class="button button1" href="infoloader.html"><i class="far fa-question-circle fa-lg"></i>  What is KickTracker?</a> <!-- This is the button on the landing page that sends the user to the contents page. Also has the icon to add some asthetics to the page -->
+                  <a class="button button1" href="infoloader.html"><i class="far fa-question-circle fa-lg"></i>  What is KickTracker?</a>   -->
           </div>
         </div>
           </div>
@@ -55,14 +64,26 @@
 </form>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.12.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/7.12.0/firebase-analytics.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var config = {
+    apiKey: "AIzaSyAL6cJUOxo7PaFkDeN1UiCKITFqNjCl5Fs",
+    authDomain: "kicktracker-69a62.firebaseapp.com",
+    databaseURL: "https://kicktracker-69a62.firebaseio.com",
+    projectId: "kicktracker-69a62",
+    storageBucket: "kicktracker-69a62.appspot.com",
+    messagingSenderId: "554765167372",
+    // appId: "1:554765167372:web:da77352e5e709eb1b63729",
+    // measurementId: "G-MSMKQLMCL4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(config);
+  // firebase.analytics();
+</script>
 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+<script src="index.js"></script>
 
 </body>
 
