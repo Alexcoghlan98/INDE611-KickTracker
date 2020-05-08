@@ -136,13 +136,19 @@ image {
   outline-color: black;
 }
 
-
 #exampleFormControlInput1 {
   border-radius: 5px;
   border-color: black;
   background-color: #157F1F;
 }
 
+.chart {
+  width: 100%;
+  min-height: 450px;
+}
+.row {
+  margin:0 !important;
+}
 
 .dashIcon{
   max-height: 170px;
