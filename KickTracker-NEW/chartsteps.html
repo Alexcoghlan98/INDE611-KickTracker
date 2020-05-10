@@ -17,21 +17,21 @@
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
-     ['Element', 'Heart Rate In BPM', { role: 'style' }],
-     ['1st - 10th Min', 60, '#157F1F'],
-     ['11th - 20th Min', 68, '#157F1F'],
-     ['21st - 30th Min', 74, '#157F1F'],
-     ['31st - 45th Min', 70, '#157F1F' ],
-     ['46th - 50th Min', 67, '#157F1F' ],
-     ['51st - 60th Min', 76, '#157F1F' ],
-     ['61st - 70th Min', 81, '#157F1F' ],
-     ['71st - 80th Min', 79, '#157F1F' ],
-     ['81st - 90th Min', 82, '#157F1F' ],
+     ['Element', 'Steps', { role: 'style' }],
+     ['1st - 10th Min', 3432, '#157F1F'],
+     ['11th - 20th Min', 3196, '#157F1F'],
+     ['21st - 30th Min', 2995, '#157F1F'],
+     ['31st - 45th Min', 3634, '#157F1F' ],
+     ['46th - 50th Min', 1356, '#157F1F' ],
+     ['51st - 60th Min', 1743, '#157F1F' ],
+     ['61st - 70th Min', 1567, '#157F1F' ],
+     ['71st - 80th Min', 2975, '#157F1F' ],
+     ['81st - 90th Min', 2393, '#157F1F' ],
   ]);
 
         // Set chart options
-        var options = {'title':'Average Heart Rate From Previous Session', titleTextStyle:{fontSize:'15', fontName:'"Avenir"'},
-                       'hAxis': {title: 'BPM', titleTextStyle: {color: 'black',fontSize:'15',fontName:'"Avenir"'}},
+        var options = {'title':'Average Steps From Your Previous Session', titleTextStyle:{fontSize:'15', fontName:'"Avenir"'},
+                       'hAxis': {title: 'Number of Steps', titleTextStyle: {color: 'black',fontSize:'15',fontName:'"Avenir"'}},
                        'vAxis': {minValue:10},
                        'backgroundColor': '#858b93',
                        'colors': ['#157F1F', 'green'],
@@ -55,7 +55,7 @@
     <!--Div that will hold the bar chart-->
     <div class="col-12"> <!--This determines the columns that all of the content goes into, it positions the content in certain parts of the page so that it all looks professional and arranged -->
       <div class="form-group mx-sm-3 mb-2"> <!-- This helps with the positioning and organisation of the page in general -->
-        <p>Your Heart Rate</p> <!-- This is the title of the product -->
+        <p>Your Steps</p> <!-- This is the title of the product -->
         <div id="chart_div"></div>
       </div>
       <div class="text-center">
